@@ -16,6 +16,10 @@ cd install
 ./setup.sh
 ```
 
+> [!NOTE]
+> In this example we have already generated the Kong2EG resources. To generate these resources yourself, you'll need the `kong2eg` command line tool. An example how to use this tool can be found in the `install/run-kong2eg.sh` script in this repository.
+
+
 Once the resources have been created succesfully, check that your Envoy Gateway pod now has 3 containers, the `envoy` container, the `shutdown-manager` container and the `kong2envoy` container:
 
 ```
